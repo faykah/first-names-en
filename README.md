@@ -78,7 +78,10 @@ Browser
 	<script type="text/javascript" src="https://unpkg.com/@faykah/first-names-en@0.1.0/lib/index.browser.min.js" defer></script>
 
 	<script type="text/javascript" defer>
-		const generateFirstName = Faykah.createGenerator(Faykah.firstNames);
+		const { createGenerator } = Faykah;
+		const { firstNames } = Faykah.firstNames;
+
+		const generateFirstName = createGenerator(firstNames);
 
 		generateFirstName(); // "Oscar"
 		generateFirstName(); // "Isabella"
@@ -118,7 +121,9 @@ Browser
 	<script type="text/javascript" src="https://unpkg.com/@faykah/first-names-en@0.1.0/lib/index.browser.min.js" defer></script>
 
 	<script type="text/javascript" defer>
-		for (const firstName of Faykah.firstNames) {
+		const { firstNames } = Faykah.firstNames;
+
+		for (const firstName of firstNames) {
 			console.log(firstName);
 		}
 	</script>

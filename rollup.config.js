@@ -17,12 +17,12 @@ export default {
 		},
 		{
 			format: "iife",
-			name: "Faykah",
+			name: "Faykah.firstNames",
 			file: "lib/index.browser.js",
 		},
 		{
 			format: "iife",
-			name: "Faykah",
+			name: "Faykah.firstNames",
 			file: "lib/index.browser.min.js",
 			plugins: [
 				terser(),
